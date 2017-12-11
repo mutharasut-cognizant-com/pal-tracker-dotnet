@@ -2,4 +2,4 @@
 applications:
 - name: pal-tracker
   path: src/PalTracker/bin/Release/netcoreapp1.1/publish/
-  host: rf-pal-tracker-review
+  host: rf-pal-tracker-review-tm
