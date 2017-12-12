@@ -1,16 +1,9 @@
 ﻿<Properties StartupConfiguration="{FC55F288-B91F-4A8C-8242-909374873F80}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/PalTracker/Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="manifest-review.yml">
     <Files>
-      <File FileName="test/PalTrackerTests/TimeEntryIntegrationTest.cs" Line="59" Column="15" />
-      <File FileName="src/PalTracker/MySqlTimeEntryRepository.cs" Line="23" Column="50" />
-      <File FileName="src/PalTracker/TimeEntry.cs" Line="5" Column="28" />
-      <File FileName="src/PalTracker/TimeEntryContext.cs" Line="1" Column="1" />
-      <File FileName="ci/build.yml" Line="50" Column="32" />
-      <File FileName="manifest-review.yml" Line="7" Column="19" />
-      <File FileName="manifest-production.yml" Line="7" Column="18" />
-      <File FileName="test/PalTrackerTests/DbTestSupport.cs" Line="12" Column="14" />
-      <File FileName="test/PalTrackerTests/TimeEntryControllerTest.cs" Line="51" Column="80" />
-      <File FileName="src/PalTracker/Startup.cs" Line="39" Column="69" />
+      <File FileName="src/PalTracker/MySqlTimeEntryRepository.cs" Line="21" Column="36" />
+      <File FileName="ci/build.yml" Line="44" Column="9" />
+      <File FileName="manifest-review.yml" Line="5" Column="33" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,14 +11,13 @@
           <Option id="ShowAllFiles" value="True" />
           <Node name="PalTracker" expanded="True">
             <Node name="src" expanded="True">
-              <Node name="PalTracker" expanded="True">
-                <Node name="Startup.cs" selected="True" />
-              </Node>
+              <Node name="PalTracker" expanded="True" />
             </Node>
             <Node name="test" expanded="True">
               <Node name="PalTrackerTests" expanded="True" />
             </Node>
             <Node name="ci" expanded="True" />
+            <Node name="manifest-review.yml" selected="True" />
           </Node>
         </State>
       </Pad>
