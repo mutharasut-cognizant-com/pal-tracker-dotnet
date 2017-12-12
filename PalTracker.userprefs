@@ -1,9 +1,7 @@
 ﻿<Properties StartupConfiguration="{FC55F288-B91F-4A8C-8242-909374873F80}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="manifest-review.yml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="test/PalTrackerTests/TimeEntryIntegrationTest.cs">
     <Files>
-      <File FileName="src/PalTracker/MySqlTimeEntryRepository.cs" Line="21" Column="36" />
-      <File FileName="ci/build.yml" Line="44" Column="9" />
-      <File FileName="manifest-review.yml" Line="5" Column="33" />
+      <File FileName="test/PalTrackerTests/TimeEntryIntegrationTest.cs" Line="141" Column="21" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,10 +12,13 @@
               <Node name="PalTracker" expanded="True" />
             </Node>
             <Node name="test" expanded="True">
-              <Node name="PalTrackerTests" expanded="True" />
+              <Node name="PalTrackerTests" expanded="True">
+                <Node name="TimeEntryIntegrationTest.cs" selected="True" />
+              </Node>
             </Node>
-            <Node name="ci" expanded="True" />
-            <Node name="manifest-review.yml" selected="True" />
+            <Node name="databases" expanded="True">
+              <Node name="tracker" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
