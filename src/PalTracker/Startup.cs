@@ -5,6 +5,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Steeltoe.CloudFoundry.Connector.MySql.EFCore;
 using Steeltoe.Extensions.Configuration;
+using Steeltoe.Management.CloudFoundry;
+using Steeltoe.Management.Endpoint.Health;
+using Steeltoe.Management.Endpoint.Info;
 
 namespace PalTracker
 {
@@ -29,6 +32,10 @@ namespace PalTracker
             // Add framework services.
             services.AddMvc();
 
+            services.AddSingleton<IHealthContributor, TimeEntryHealthContributor>();
+            services.AddSingleton<IInfoContributor, TimeEntryInfoContributor>();
+            services.AddSingleton<IOperationCounter<TimeEntry>, OperationCounter<TimeEntry>>();
+
             services.AddSingleton(sp => new WelcomeMessage(
                 Configuration.GetValue<string>("WELCOME_MESSAGE")
             ));
@@ -42,6 +49,8 @@ namespace PalTracker
 
             services.AddScoped<ITimeEntryRepository, MySqlTimeEntryRepository>();
             services.AddDbContext<TimeEntryContext>(options => options.UseMySql(Configuration));
+
+            services.AddCloudFoundryActuators(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,6 +60,8 @@ namespace PalTracker
             loggerFactory.AddDebug();
 
             app.UseMvc();
+
+            app.UseCloudFoundryActuators();
         }
     }
 }

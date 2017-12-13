@@ -1,28 +1,11 @@
 ﻿<Properties StartupConfiguration="{FC55F288-B91F-4A8C-8242-909374873F80}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="test/PalTrackerTests/TimeEntryIntegrationTest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/PalTracker/TimeEntryInfoContributor.cs">
     <Files>
-      <File FileName="test/PalTrackerTests/TimeEntryIntegrationTest.cs" Line="141" Column="21" />
+      <File FileName="src/PalTracker/Startup.cs" Line="35" Column="77" />
+      <File FileName="src/PalTracker/TimeEntryController.cs" Line="11" Column="114" />
+      <File FileName="test/PalTrackerTests/TimeEntryControllerTest.cs" Line="22" Column="87" />
+      <File FileName="src/PalTracker/TimeEntryInfoContributor.cs" Line="19" Column="15" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Option id="ShowAllFiles" value="True" />
-          <Node name="PalTracker" expanded="True">
-            <Node name="src" expanded="True">
-              <Node name="PalTracker" expanded="True" />
-            </Node>
-            <Node name="test" expanded="True">
-              <Node name="PalTrackerTests" expanded="True">
-                <Node name="TimeEntryIntegrationTest.cs" selected="True" />
-              </Node>
-            </Node>
-            <Node name="databases" expanded="True">
-              <Node name="tracker" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.src.PalTracker PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
